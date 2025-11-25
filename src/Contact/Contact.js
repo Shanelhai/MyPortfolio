@@ -41,7 +41,7 @@ const Contact = () => {
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" 
               name="_next" 
-              value="http://localhost:3000/contact" 
+              value="https://shanelhai.github.io/portfolio/#/contact" 
             />
 
             <div className="input-group">

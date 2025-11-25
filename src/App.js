@@ -5,7 +5,7 @@ import About from './About/About';
 import Project from './Project/Project';
 import Contact from './Contact/Contact';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Name = () => {
   return <h1>Hello I am a Name Page</h1>;

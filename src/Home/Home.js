@@ -1,5 +1,5 @@
 import React from "react";
-import one from "../Images/one.jpg";
+import two from "../Images/two.jpg";
 import './Home.css';
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const Home = ()=>{
       </div>
 
       <div className="hero-image-container">
-        <img src={one} alt="Shanelhai" className="hero-image" />
+        <img src={two} alt="Shanelhai" className="hero-image" />
       </div>
     </section>
         </>
