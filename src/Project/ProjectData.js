@@ -2,10 +2,38 @@ import three from "../Images/three.png";
 import four from "../Images/four.png";
 import five from "../Images/five.png";
 import six from "../Images/six.png";
+import seven from "../Images/seven.PNG";
+import eight from "../Images/eight.PNG";
+import nine from "../Images/nine.PNG";
+
 
 const ProjectData = [
-  { 
+   { 
     id: 1,
+    image: seven, 
+    name: "Recipe Sharing Web App",
+    Language: "React.js, Node.js, MongoDB",
+    description: "Full-stack recipe platform where users can browse, upload, and manage recipes. Features JWT authentication, private routes, REST APIs, and responsive UI.",
+    btn: "https://shaan-recipe.vercel.app/",
+  },
+  { 
+    id: 2,
+    image: nine,
+    name: "ApnaMovies - Movie Exploration App",
+    Language: "React.js, TMDB API",
+    description: "Movie discovery app that fetches live data from TMDB API. Includes popular movies, search functionality, and dynamic routing for movie details.",
+    btn: "https://apne-movies.vercel.app/",
+  },
+  { 
+    id: 3,
+    image: eight, 
+    name: "E-Commerce Backend System",
+    Language: "Node.js, Express.js, MongoDB",
+    description: "Scalable e-commerce backend with JWT authentication, role-based access (Admin/User), cart management, order booking system, and RESTful APIs.",
+    btn: "https://github.com/Shanelhai", // Replace with your actual repo link
+  },
+  { 
+    id: 4,
     image: five,
     name: "Flavor Aura Restaurant Website",
     Language: "React.js",
@@ -13,7 +41,7 @@ const ProjectData = [
     btn: "https://github.com/Shanelhai/flavor-aura",
   },
   {
-    id: 2,
+    id: 5,
     image: four,
     name: "Aura Fitness Club",
     Language: "React.js",
@@ -21,7 +49,7 @@ const ProjectData = [
     btn: "https://github.com/Shanelhai/GYM",
   },
   { 
-    id: 3,
+    id: 6,
     image: three,
     name: "University Portal",
     Language: "React.js & Express.js",
@@ -29,7 +57,7 @@ const ProjectData = [
     btn: "https://github.com/Shanelhai/University",
   },
   {
-    id: 4,
+    id: 7,
     image: six,
     name: "Furniture E-commerce Backend API",
     Language: "ASP.NET & C#",

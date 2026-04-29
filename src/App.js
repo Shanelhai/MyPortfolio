@@ -6,6 +6,7 @@ import Project from './Project/Project';
 import Contact from './Contact/Contact';
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './Footer/Footer';
 
 const Name = () => {
   return <h1>Hello I am a Name Page</h1>;
@@ -28,6 +29,7 @@ const App=()=>{
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/footer" element={<Footer />} />
           <Route path="/name" element={<Name />} />
           <Route path="*" element={<Error />} />
         </Routes>

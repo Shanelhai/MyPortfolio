@@ -1,70 +1,243 @@
 .project-container {
-  padding: 2rem;
+  padding: 80px 8%;
   text-align: center;
-  background-color: #ffff;
+  background: linear-gradient(135deg, #f5f7fc 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+/* Heading - Add this in your component or CSS */
+.project-container::before {
+  content: "My Projects";
+  display: block;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.project-container::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #0077ff, #00a6ff);
+  margin: 0 auto 50px auto;
+  border-radius: 10px;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 1rem;
 }
 
 .project-card {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0, 10);
-  transition: transform 0.3s;
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 24px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 1px solid rgba(0, 119, 255, 0.08);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0px 20px 35px rgba(0, 119, 255, 0.12);
+  border-color: rgba(0, 119, 255, 0.2);
 }
 
 .project-image {
   width: 100%;
-  height: 400px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.02);
 }
 
 .project-name {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.5rem;
+  margin: 1.2rem 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
 }
 
 .project-language {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0077ff;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  background: rgba(0, 119, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  width: fit-content;
 }
 
 .project-description {
-  font-size: 1.5rem;
-  color: black;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
 }
 
 .project-btn {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
-  background: #007bff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #0077ff, #0050c8);
   color: white;
-  border-radius: 5px;
+  border-radius: 40px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
 }
 
 .project-btn:hover {
-  background: #0056b3;
+  background: linear-gradient(90deg, #0050c8, #003a99);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 119, 255, 0.3);
+}
+
+/* If you want to add a heading in JSX instead of CSS pseudo-elements */
+.project-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-heading-underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #0077ff, #00a6ff);
+  margin: 0 auto 50px auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-container {
+    padding: 60px 6%;
+  }
+  
+  .project-grid {
+    gap: 2rem;
+  }
+  
+  .project-name {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .project-container {
+    padding: 50px 5%;
+  }
+  
+  .project-container::before {
+    font-size: 2.8rem;
+  }
+  
   .project-grid {
     grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .project-image {
+    height: 220px;
+  }
+  
+  .project-name {
+    font-size: 1.6rem;
+  }
+  
+  .project-language {
+    font-size: 0.95rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+  
+  .project-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    padding: 40px 4%;
+  }
+  
+  .project-container::before {
+    font-size: 2.2rem;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .project-name {
+    font-size: 1.4rem;
+  }
+  
+  .project-language {
+    font-size: 0.85rem;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .project-container {
+    background: linear-gradient(135deg, #0f0f1a 0%, #12121f 100%);
+  }
+  
+  .project-container::before {
+    color: #f1f1f1;
+  }
+  
+  .project-card {
+    background: #1a1a2e;
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .project-name {
+    color: #f1f1f1;
+  }
+  
+  .project-description {
+    color: #b0b0c0;
+  }
+  
+  .project-language {
+    background: rgba(0, 119, 255, 0.2);
+    color: #5aa9ff;
   }
 }

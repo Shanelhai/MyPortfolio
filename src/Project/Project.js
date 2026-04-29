@@ -1,9 +1,11 @@
 import React from "react";
 import ProjectData from "./ProjectData";
 import "./Project.css";
+import Footer from "../Footer/Footer";
 
 const Project = () => {
   return (
+    <>
     <div className="project-container">
       <div className="project-grid">
         {ProjectData.map((project) => (
@@ -19,6 +21,8 @@ const Project = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

@@ -1,0 +1,88 @@
+.footer {
+  background: white;
+  color: #0077ff;
+  padding: 30px 20px;
+  border-top: 2px solid #000000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* LEFT */
+.footer-left h1 {
+  font-size: 4rem;
+}
+
+.footer-left p {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 220px;
+}
+
+/* CENTER */
+.footer-center {
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #000; /* 🔥 hover black */
+}
+
+.footer-center p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* RIGHT */
+.footer-right {
+  text-align: right;
+}
+
+/* 🔥 UPDATED ICON STYLE */
+.footer-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.footer-icons a {
+  font-size: 2rem;
+  color: #000; /* 🔥 black icon */
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px; /* 🔥 square (not circle) */
+  background: #fff;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  background: #0077ff;
+  color: #fff;
+  border-color: #0077ff;
+  transform: translateY(-2px);
+}
+
+.footer-right p {
+  font-size: 1.5rem;
+  color: black;
+}
