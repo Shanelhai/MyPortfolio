@@ -12,7 +12,7 @@ const Home = () => {
         <div className="hero-content">
           <h1 className="hero-title">Hello, I am <span>Shanelhai</span></h1>
           <p className="hero-subtitle">
-            Aspiring web developer with a strong interest in creating smart, intuitive, and user-focused digital solutions. Skilled in modern web technologies including React.js, Angular, Express.js, .NET, and MS SQL. Currently a fresher with hands-on experience gained through self-built projects, continuous learning, and practical experimentation. Focused on writing clean, efficient code and building responsive, scalable applications while steadily advancing technical depth and problem-solving skills.
+            Aspiring web developer with a strong interest in creating smart, intuitive, and user-focused digital solutions. Skilled in modern web technologies including React.js, Node.js, Express.js, and MongoDB. Possess 6 months of hands-on experience in web development, including building and delivering a real-world eCommerce website project for a client. Experienced in developing responsive, scalable, and user-friendly applications with a strong focus on clean code, performance, and problem-solving. Continuously learning and exploring modern development practices to enhance technical expertise.
           </p>
           <div className="hero-buttons">
             <Link to="/contact">
